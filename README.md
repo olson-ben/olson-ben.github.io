@@ -1,2 +1,2 @@
-# colleenskemp.github.io
-Portfolio site for professional specializing in human-centered organizational development, facilitation, and mediation for inclusive, heart-centered workplaces
+# olson-ben.github.io
+Portfolio site for professional specializing in human-centered organizational development, sales, and hands-on team building.
