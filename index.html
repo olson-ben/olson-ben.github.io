@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Olson - Collaborative supervisor with expertise in program development, team leadership, and hands-on problem-solving</title>
+    <title>Benjamin Olson - Hands-On Leader & Operations Manager</title>
     <style>
         /* Josh-inspired accessible styling */
         * {
@@ -95,6 +95,10 @@
             line-height: 1.7;
             margin-bottom: 2rem;
             color: #2d3748;
+        }
+
+        .intro p + p {
+            margin-top: 1rem;
         }
         
         .job-section {
@@ -228,6 +232,12 @@
             border-radius: 6px;
             border-left: 3px solid #1a365d;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .skill-category:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
         }
         
         .skill-category h4 {
@@ -294,123 +304,28 @@
             .job-meta {
                 font-size: 0.9rem;
             }
+
+            .job-section,
+            .company-section {
+                padding-left: 0.75rem;
+            }
         }
-        
-/* Print styles */
-@media print {
-    body {
-        background: white;
-        font-size: 10pt;
-        line-height: 1.3;
-        padding: 0.5rem;
-        max-width: 100%;
-    }
-    
-    header {
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-    }
-    
-    h1 { 
-        font-size: 18pt; 
-        margin-bottom: 0.25rem;
-    }
-    
-    h2 { 
-        font-size: 14pt; 
-        margin: 1rem 0 0.5rem 0;
-        page-break-after: avoid;
-    }
-    
-    h3 { 
-        font-size: 12pt; 
-        margin: 0.5rem 0 0.25rem 0;
-        page-break-after: avoid;
-    }
-    
-    h4 { 
-        font-size: 10.5pt; 
-        margin: 0.5rem 0 0.25rem 0;
-    }
-    
-    .intro {
-        font-size: 10pt;
-        margin-bottom: 1rem;
-    }
-    
-    .job-section {
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        page-break-inside: avoid;
-    }
-    
-    .company-section {
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.75rem;
-        page-break-inside: auto;
-    }
-    
-    .company-header {
-        margin-bottom: 0.5rem;
-        page-break-after: avoid;
-    }
-    
-    .role-section {
-        margin-bottom: 0.75rem;
-        padding-bottom: 0.5rem;
-        page-break-inside: avoid;
-    }
-    
-    .job-subsection {
-        margin-bottom: 0.75rem;
-    }
-    
-    .job-meta {
-        font-size: 9pt;
-        margin-bottom: 0.25rem;
-    }
-    
-    .job-description {
-        font-size: 9.5pt;
-        margin-bottom: 0.5rem;
-    }
-    
-    ul {
-        margin: 0 0 0.5rem 0;
-    }
-    
-    li {
-        margin-bottom: 0.25rem;
-        font-size: 9.5pt;
-        line-height: 1.3;
-    }
-    
-    .skills-grid {
-        gap: 0.5rem;
-        margin: 0.75rem 0;
-    }
-    
-    .skill-category {
-        padding: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    footer {
-        margin-top: 1rem;
-        padding-top: 0.5rem;
-        font-size: 8pt;
-    }
-}
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.75rem; }
+            .subtitle { font-size: 1.05rem; }
+            .job-title { font-size: 1.15rem; }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Benjamin Olson</h1>
-        <div class="subtitle">Business Developer, Operations Manager, Program Builder</div>
+        <div class="subtitle">Hands-On Leader &amp; Operations Manager</div>
         <div class="contact">
             LaCrosse, Wisconsin<br>
             <a href="tel:608-792-5501">608.792.5501</a> | 
-            <a href="mailto:hello.benolson@proton.me">hello.benolson@proton.me</a><br>
+            <a href="mailto:hello.benolson@proton.me">hello.benolson@proton.me</a>
         </div>
     </header>
 
@@ -418,29 +333,42 @@
         <section>
             <h2>Professional Summary</h2>
             <div class="intro">
-I am a community organizer and coordinator with nearly 2 decades of experience managing teams and operations across youth development, conservation, and sales. All of my work centers on supporting people and strengthening communities.
-<br><br>
-My background comprises managing youth workforce teams as Mayor's Crew Program Coordinator with WisCorps/AmeriCorps, serving on the Board of Directors as Registrar for La Crescent Youth Soccer Association, and facilitating solar installation projects as a Business Developer, Operations Coordinator, Site Surveyor, and Installer. Additionally, I maintain Co-Ownership of Heartland Solutions, a recreational land use consultancy, and Bluff City Soccer Club, a free youth soccer program addressing equity and access in sports.
-<br><br>
-My creative practice includes concept development on additional projects like Fractal HR and the Sacred Pause app. I use my breadth of exposure to connect people and resources, building programs that solve problems and serve.
+                <p>Nearly 2 decades of experience leading teams, managing operations, and driving results across construction, conservation, sales, youth development, and program management.</p>
+                <p>That's looked like coordinating conservation crews, overseeing a 600+ player soccer organization, and closing solar projects from sale to installation.</p>
+                <p>Starting April 10, I join ScoutU as a Scout/Advisor — identifying talent, signing clients, and guiding athletes through the college recruitment process.</p>
             </div>
         </section>
 
-       <section>
+        <section>
             <h2>Professional Experience</h2>
-            
+
+            <!-- ScoutU -->
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Scout / Advisor</div>
+                    <div class="job-company">ScoutU</div>
+                    <div class="job-meta">April 2026 — Present &nbsp;·&nbsp; Starting April 10</div>
+                </div>
+                <div class="job-description">Marketing agency helping youth athletes navigate and maximize their college recruitment journey.</div>
+                <ul>
+                    <li>Identify and scout high-potential youth athletic prospects for college recruitment opportunities</li>
+                    <li>Sign and onboard new clients, building trust with athletes and families from first contact through commitment</li>
+                    <li>Advise clients throughout the full recruiting process — film, exposure, outreach, and college program fit</li>
+                </ul>
+            </div>
+
+            <!-- Soccer Coaching -->
             <div class="company-section">
                 <div class="company-header">
-                    <h3>Current Leadership Roles</h3>
-                    <div class="job-meta">2023 — Present</div>
+                    <h3>Soccer Coaching &amp; Development</h3>
+                    <div class="job-meta">2007 — Present</div>
+                    <div class="job-description">19 years of coaching experience across recreational, club, high school, and collegiate levels. Coached at 12+ organizations serving youth through NCAA Division II athletes.</div>
                 </div>
 
                 <div class="role-section">
-                    <h4>Board of Directors, Recreational Registrar & Coach</h4>
+                    <h4>Board of Directors, Recreational Registrar &amp; Coach</h4>
                     <div class="job-company">La Crescent Youth Soccer Association</div>
-                    <div class="job-meta">Registrar: 2025 — Present | Coach: 2023 — Present • La Crescent, MN</div>
-                    <div class="job-description">Board governance and operational leadership for community youth soccer organization serving 400+ players annually.</div>
-                    
+                    <div class="job-meta">Registrar: 2025 — Present | Coach: 2023 — Present &bull; La Crescent, MN &bull; 600+ players annually</div>
                     <ul>
                         <li>Coordinate registration systems, player placement, and program scheduling across recreational and competitive divisions</li>
                         <li>Serve on Board of Directors providing strategic oversight and policy development</li>
@@ -449,117 +377,51 @@ My creative practice includes concept development on additional projects like Fr
                     </ul>
                 </div>
 
-<div class="role-section">
-                    <h4>Co-Owner</h4>
-                    <div class="job-company">Heartland Solutions</div>
-                    <div class="job-meta">May 2025 — Present • La Crosse, WI</div>
-                    <div class="job-description">Recreational land use consultancy specializing in sustainable, hand-built multiuse trail development for private clients.</div>
-                    
+                <div class="job-subsection">
+                    <div class="subsection-title">Additional Current Positions</div>
                     <ul>
-                        <li>Lead strategic planning, establish business processes, and manage client relations</li>
-                        <li>Design and construct multiuse trails with meticulous attention to environmental sustainability and ecosystem preservation</li>
-                        <li>Direct trail building operations using hand tools, chainsaws, and light vehicles with sustainable techniques that minimize ecological impact</li>
-                        <li>Coordinate site assessments, environmental stewardship practices, and land management planning</li>
-                        <li>Develop project proposals, timelines, and budgets for custom trail and conservation projects</li>
+                        <li><strong>Logan High School Soccer</strong> — Boys Head Coach (2024–2026), transitioning to Assistant Coach for both Boys and Girls programs (2026)</li>
+                        <li><strong>Viterbo University Men's Soccer</strong> — Assistant Coach (2025 — Present), NAIA program</li>
+                        <li><strong>Mississippi Valley Storm Soccer Club</strong> — Coach, Referee (Current)</li>
                     </ul>
-                </div>
-
-                <div class="role-section">
-                    <h4>Founder</h4>
-                    <div class="job-company">Bluff City Soccer Club</div>
-                    <div class="job-meta">Launching April 2026 • La Crosse, WI</div>
-                    <div class="job-description">Free-to-play youth soccer program addressing equity and access barriers in youth sports.</div>
-                    
-                    <ul>
-                        <li>Develop program structure, curriculum, and operational framework for no-cost youth soccer</li>
-                        <li>Build community partnerships and secure resources to eliminate financial barriers to participation</li>
-                        <li>Design inclusive programming emphasizing skill development and positive youth development</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="company-section">
-                <div class="company-header">
-                    <h3>Soccer Coaching & Development</h3>
-                    <div class="job-meta">2007 — Present</div>
-                    <div class="job-description">19 years of coaching experience across recreational, club, high school, and collegiate levels. Developed high-performance teams while maintaining person-centered leadership approach. Coached at 12+ organizations serving youth through NCAA Division II athletes.</div>
                 </div>
 
                 <div class="job-subsection">
-                    <div class="subsection-title">Current Positions</div>
-                    <ul>
-                        <li><strong>Logan High School Soccer</strong> — Head Coach & Assistant Coach (2024 — Present): Boys Head Coach (2024-2026), transitioning to Assistant Coach for both Boys and Girls programs (2026)</li>
-                        <li><strong>Viterbo University Men's Soccer</strong> — Assistant Coach (2025 — Present): NAIA program supporting player development and team strategy</li>
-                        <li><strong>Mississippi Valley Storm Soccer Club</strong> — Coach, Referee (Current): Competitive youth soccer program affiliated with La Crescent Youth Soccer Association</li>
-                    </ul>
-                </div>
-
-               <div class="job-subsection">
                     <div class="subsection-title">Previous Positions</div>
                     <ul>
-                        <li><strong>Winona State University Women's Soccer</strong> — Goalkeeper Coach (2023 — 2025) NCAA Division II program</li>
-                        <li><strong>CRUSA/Rush WI West</strong> — Head Coach & Goalkeeper Coach (2013 — 2022): Nine-year tenure developing competitive youth players</li>
-                       <li><strong>Additional experience</strong> includes head and assistant coaching roles at Central HS, Onalaska HS, La Crosse YMCA, Camp Shutout, La Crosse Park & Rec, and programs in Minnesota and Virginia</li>
-                    </ul>
-                </div>
-
-                <div class="job-subsection">
-                    <div class="subsection-title">Key Achievements & Approach</div>
-                    <ul>
-                        <li>Goalkeeper specialist with United Soccer Coaches Goalkeeping Level 3 Diploma and USSF D License</li>
-                        <li>Developed training methodologies combining technical skill development with mental resilience and confidence building</li>
-                        <li>Emphasize person-centered leadership, creating psychologically safe team environments while maintaining competitive standards</li>
-                        <li>Experience across all developmental levels from recreational youth (ages 5+) through NCAA Division II collegiate athletes</li>
+                        <li><strong>Winona State University Women's Soccer</strong> — Goalkeeper Coach (2023–2025), NCAA Division II</li>
+                        <li><strong>CRUSA/Rush WI West</strong> — Head Coach &amp; Goalkeeper Coach (2013–2022), nine-year tenure</li>
+                        <li><strong>Additional experience</strong> includes head and assistant coaching roles at Central HS, Onalaska HS, La Crosse YMCA, Camp Shutout, La Crosse Park &amp; Rec, and programs in Minnesota and Virginia</li>
                     </ul>
                 </div>
             </div>
 
-           <div class="job-section">
+            <!-- Solar -->
+            <div class="job-section">
                 <div class="job-header">
-                    <div class="job-title">Team Leader, Crew Advisor & Program Coordinator</div>
-                    <div class="job-company">WisCorps, Inc. / AmeriCorps</div>
-                    <div class="job-meta">2018 — 2021 • Various locations, Wisconsin</div>
+                    <div class="job-title">Solar Project Coordinator, Site Surveyor &amp; Installation Technician</div>
+                    <div class="job-company">Lehmann Electrical &amp; Design, Champion Solar &amp; Ethos Green Power Cooperative</div>
+                    <div class="job-meta">June 2021 — February 2025 &bull; Wisconsin &amp; Minnesota</div>
                 </div>
-                <div class="job-description">Led conservation crews and coordinated youth workforce development programs during pandemic response. Multiple roles including Mayor's Crew Program Coordinator (2020), Disaster Relief Crew Member (2020), Mayor's Crew Leader (2019), WIOA Crew Leader (2018), Event Staff (2021), and Gateway Area Council Nature Center Director.</div>
-                
+                <div class="job-description">Comprehensive solar energy experience spanning project coordination, business development, site assessment, and hands-on installation across residential and commercial projects.</div>
                 <ul>
-                    <li>Coordinated crisis response operations and youth workforce teams as Mayor's Crew Program Coordinator during COVID-19 pandemic</li>
-                    <li>Led environmental stewardship projects including trail maintenance, habitat restoration, and public land improvements</li>
-                    <li>Managed crew operations, safety protocols, and project logistics in remote outdoor settings</li>
-                    <li>Provided mentorship and workforce development training for young adults in conservation careers</li>
-                    <li>Coordinated disaster relief efforts and emergency response operations</li>
-                    <li>Developed team leadership skills while working in challenging conditions and high-pressure environments</li>
-                </ul>
-            </div>
-
- <div class="job-section">
-                <div class="job-header">
-                    <div class="job-title">Solar Project Coordinator, Site Surveyor & Installation Technician</div>
-                    <div class="job-company">Lehmann Electrical & Design, Champion Solar & Ethos Green Power Cooperative</div>
-                    <div class="job-meta">June 2021 — February 2025 • Wisconsin & Minnesota</div>
-                </div>
-                <div class="job-description">Comprehensive solar energy experience spanning project coordination, business development, site assessment, and hands-on installation work across residential and commercial projects.</div>
-                
-                <ul>
-                    <li>Managed solar project operations from initial site assessment through permitting, installation, and final inspection</li>
-                    <li>Operated heavy equipment including skid steers, forklifts, trenchers, post pounders, and commercial diesel trucks (Class 3-5)</li>
-                    <li>Conducted site surveys and technical assessments for solar feasibility and system design</li>
+                    <li>Managed solar projects from initial site assessment through permitting, installation, and final inspection</li>
+                    <li>Operated heavy equipment including skid steers, forklifts, trenchers, post pounders, and commercial diesel trucks (Class 3–5)</li>
                     <li>Coordinated cross-functional teams including sales, engineering, installation crews, and permitting authorities</li>
                     <li>Performed solar panel installation, electrical work, and system commissioning</li>
-                    <li>Developed operational processes and workflow improvements for installation efficiency</li>
-                    <li>Managed project documentation, data collection, permitting applications, and regulatory compliance</li>
+                    <li>Developed operational processes and managed compliance documentation, permitting, and regulatory requirements</li>
                     <li>Supported business development through client relationship management and proposal development</li>
                 </ul>
             </div>
 
+            <!-- Bankers Life -->
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Insurance Sales Representative</div>
                     <div class="job-company">Bankers Life and Casualty</div>
-                    <div class="job-meta">August 2022 — May 2023 • La Crosse, WI</div>
+                    <div class="job-meta">August 2022 — May 2023 &bull; La Crosse, WI</div>
                 </div>
                 <div class="job-description">Insurance sales and client account management for senior market insurance products.</div>
-                
                 <ul>
                     <li>Developed client accounts through relationship building and needs assessment</li>
                     <li>Managed administrative documentation and compliance requirements</li>
@@ -567,16 +429,31 @@ My creative practice includes concept development on additional projects like Fr
                 </ul>
             </div>
 
+            <!-- WisCorps -->
             <div class="job-section">
                 <div class="job-header">
-                    <div class="job-title">Student Coach & Group Lead</div>
-                    <div class="job-company">Coulee Connections LLC</div>
-                    <div class="job-meta">2017 — 2018 • La Crosse, WI</div>
+                    <div class="job-title">Team Leader, Crew Advisor &amp; Program Coordinator</div>
+                    <div class="job-company">WisCorps, Inc. / AmeriCorps</div>
+                    <div class="job-meta">2018 — 2021 &bull; Various locations, Wisconsin</div>
                 </div>
-                <div class="job-description">Trauma-informed care and mentorship for youth ages 5-18 with emotional and behavioral challenges.</div>
-                
+                <div class="job-description">Led conservation crews and coordinated youth workforce development programs. Multiple roles including Mayor's Crew Program Coordinator, Disaster Relief Crew Member, Mayor's Crew Leader, WIOA Crew Leader, and Gateway Area Council Nature Center Director.</div>
                 <ul>
-                    <li>Provided trauma-informed care and mentoring for youth with behavioral challenges across multiple program settings</li>
+                    <li>Led environmental stewardship projects including trail maintenance, habitat restoration, and public land improvements</li>
+                    <li>Managed crew operations, safety protocols, and project logistics in remote outdoor settings</li>
+                    <li>Provided mentorship and workforce development training for young adults in conservation careers</li>
+                    <li>Coordinated disaster relief and emergency response operations across multiple sites</li>
+                </ul>
+            </div>
+
+            <!-- Coulee Connections -->
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Student Coach &amp; Group Lead</div>
+                    <div class="job-company">Coulee Connections LLC</div>
+                    <div class="job-meta">2017 — 2018 &bull; La Crosse, WI</div>
+                </div>
+                <div class="job-description">Trauma-informed care and mentorship for youth ages 5–18 with emotional and behavioral challenges.</div>
+                <ul>
                     <li>Led structured programming focused on life skills development, social-emotional learning, and positive behavior support</li>
                     <li>Documented case reports and collaborated with multidisciplinary teams including therapists, families, and school staff</li>
                     <li>Managed crisis interventions and de-escalation using evidence-based behavioral management techniques</li>
@@ -585,70 +462,62 @@ My creative practice includes concept development on additional projects like Fr
         </section>
 
         <section>
-            <h2>Education & Certifications</h2>
-            
+            <h2>Education &amp; Certifications</h2>
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">College of Biological Sciences</div>
                     <div class="job-company">University of Minnesota - Twin Cities</div>
                 </div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">PV202 Certification</div>
                     <div class="job-company">Wisconsin Renewable Energy Association (WREA)</div>
-                    <div class="job-meta">Current</div>
+                    <div class="job-meta">Current — Advanced photovoltaic systems training and certification</div>
                 </div>
-                <div class="job-description">Advanced photovoltaic systems training and certification</div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Nonviolent Communication (NVC) Training</div>
-                    <div class="job-company">Ongoing Professional Development</div>
-                    <div class="job-meta">In Progress</div>
+                    <div class="job-company">Ongoing Professional Development — In Progress</div>
                 </div>
-                <div class="job-description">Active training in Nonviolent Communication for conflict resolution and compassionate communication practices</div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Leave No Trace Certification</div>
-                    <div class="job-company">Leave No Trace Center for Outdoor Ethics</div>
-                    <div class="job-meta">Current</div>
+                    <div class="job-company">Leave No Trace Center for Outdoor Ethics — Current</div>
                 </div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">United Soccer Coaches Goalkeeping Level 3 Diploma</div>
-                    <div class="job-company">United Soccer Coaches</div>
-                    <div class="job-meta">Current</div>
+                    <div class="job-company">United Soccer Coaches — Current</div>
                 </div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">USSF D License</div>
-                    <div class="job-company">United States Soccer Federation</div>
-                    <div class="job-meta">Current</div>
+                    <div class="job-company">United States Soccer Federation — Current</div>
                 </div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
-                    <div class="job-title">Conflict Prevention, Intervention & Resolution Certification</div>
-                    <div class="job-company">Crisis Prevention Institute</div>
-                    <div class="job-meta">Current</div>
+                    <div class="job-title">Conflict Prevention, Intervention &amp; Resolution Certification</div>
+                    <div class="job-company">Crisis Prevention Institute — Current</div>
                 </div>
             </div>
-            
+
             <div class="job-section">
                 <div class="job-header">
-                    <div class="job-title">CPR, First Aid & AED Certification</div>
-                    <div class="job-company">American Red Cross</div>
-                    <div class="job-meta">July 2024</div>
+                    <div class="job-title">CPR, First Aid &amp; AED Certification</div>
+                    <div class="job-company">American Red Cross — July 2024</div>
                 </div>
             </div>
         </section>
@@ -657,45 +526,38 @@ My creative practice includes concept development on additional projects like Fr
             <h2>Core Competencies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4>Leadership & Management</h4>
-                    <div class="skill-list">Team Leadership • People Management • Program Coordination • Operations Management • Strategic Planning • Crisis Response • Youth Development</div>
+                    <h4>Leadership &amp; Management</h4>
+                    <div class="skill-list">Team Leadership &bull; People Management &bull; Program Coordination &bull; Operations Management &bull; Strategic Planning &bull; Crisis Response &bull; Youth Development</div>
                 </div>
-                
                 <div class="skill-category">
-                    <h4>Business Development & Sales</h4>
-                    <div class="skill-list">Client Relationship Management • Business Development • Sales • Proposal Development • Partnership Building • Stakeholder Engagement • Resource Development</div>
+                    <h4>Business Development &amp; Sales</h4>
+                    <div class="skill-list">Client Relationship Management &bull; Business Development &bull; Sales &bull; Proposal Development &bull; Partnership Building &bull; Stakeholder Engagement &bull; Resource Development</div>
                 </div>
-                
                 <div class="skill-category">
-                    <h4>Technical & Specialized Skills</h4>
-                    <div class="skill-list">Solar Project Coordination • Site Assessment • Trail Building • Heavy Machinery Operation • Land Use Planning • Conservation Practices • Environmental Stewardship</div>
+                    <h4>Hands-On &amp; Industrial Skills</h4>
+                    <div class="skill-list">Heavy Equipment Operation (Skid Steer, Forklift, Trencher) &bull; Commercial Truck Operation (Class 3–5) &bull; Tool &amp; Equipment Maintenance &bull; Safety Protocols &bull; Physical Labor &amp; Endurance &bull; Solar Installation &bull; Trail Construction &bull; Site Assessment &bull; Inventory &amp; Logistics Support</div>
                 </div>
-                
                 <div class="skill-category">
-                    <h4>Communication & Conflict Resolution</h4>
-                    <div class="skill-list">Nonviolent Communication (NVC) • Conflict Resolution • Trauma-Informed Care • Coaching & Mentoring • Facilitation • Community Organizing</div>
+                    <h4>Communication &amp; Conflict Resolution</h4>
+                    <div class="skill-list">Nonviolent Communication (NVC) &bull; Conflict Resolution &bull; Trauma-Informed Care &bull; Coaching &amp; Mentoring &bull; Facilitation &bull; Community Organizing</div>
                 </div>
             </div>
         </section>
 
         <section class="skills-section">
             <h2>Personal Interests</h2>
-            <div class="intro">
-                <ul>
-                    <li>Graphic design and creative brand development</li>
-                    <li>Backcountry adventure</li>
-                    <li>Native plant gardening and pollinator habitat creation</li>
-                    <li>Aquarium ecosystem design</li>
-                    <li>Hiking with my dog Buffy</li>
-                    <li>Being a Dad!</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Graphic design, brand development &amp; marketing</li>
+                <li>Aquarium ecosystem design</li>
+                <li>Backcountry adventure &amp; hiking with my dog</li>
+                <li>Coaching my kids</li>
+            </ul>
         </section>
 
         <section>
-            <h2>References & Recommendations</h2>
+            <h2>References &amp; Recommendations</h2>
             <div class="intro">
-                <p><a href="ben-olson-recommendation-wiscorps.pdf.pdf" target="_blank">Letter of Recommendation from Matthew K. Gaworski, Former WisCorps Program Manager</a></p>
+                <p><a href="https://olson-ben.github.io/ben-olson-recommendation-wiscorps.pdf.pdf" target="_blank">Letter of Recommendation from Matthew K. Gaworski, Former WisCorps Program Manager</a></p>
                 <p>Additional references available upon request.</p>
             </div>
         </section>
